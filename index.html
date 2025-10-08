@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — [Nama Mahasiswa]</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- Replace yourkitid.js with your Font Awesome kit or use CDN icons -->
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#home" class="brand-link">[Nama Mahasiswa]</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+        <img src="assets/FotoProfil.jpg" alt="Foto Profil [Nama Mahasiswa]" class="profile" />
+        <div class="hero-text">
+          <h1 class="fade">[Nama Mahasiswa]</h1>
+          <p class="muted">[Program Studi] — [Universitas]</p>
+          <p class="lead">"[Kutipan motivasi singkat]"</p>
+          <div class="cta">
+            <a href="#projects" class="btn">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-outline">Hubungi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <img src="assets/AboutFoto.jpg" alt="About [Nama]" class="about-img" />
+          <div>
+            <p class="lead">[Deskripsi Diri: singkat, sopan — latar belakang akademik, minat akademik, keahlian utama]</p>
+            <p><strong>Hobi:</strong> Desain, Coding, Membaca, Musik, Travelling, Anjing 🐶</p>
+            <p class="muted small">Aktif mencari proyek kolaboratif, siap belajar, dan berdedikasi pada hasil kerja yang rapi dan profesional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section fade-up">
+      <div class="container">
+        <h2>Education</h2>
+        <ul class="edu">
+          <li><strong>[Universitas]</strong> — [Program Studi] (2021 — Sekarang)</li>
+          <li><strong>[SMA/SMK]</strong> — [Jurusan] (2018 — 2021)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-up">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid projects-grid">
+          <article class="card">
+            <img src="assets/Project1.jpg" alt="[Judul Project]" />
+            <h3>[Judul Project]</h3>
+            <p class="muted">[Deskripsi singkat project: teknologi yang dipakai / fitur utama].</p>
+            <div class="card-actions">
+              <a href="[LinkGitHub]" class="btn small" target="_blank" rel="noopener">View on GitHub</a>
+              <a href="[LinkDemo]" class="btn small btn-outline" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/Project2.jpg" alt="[Judul Project]" />
+            <h3>[Judul Project]</h3>
+            <p class="muted">[Deskripsi singkat project lainnya].</p>
+            <div class="card-actions">
+              <a href="[LinkGitHub2]" class="btn small" target="_blank" rel="noopener">View on GitHub</a>
+              <a href="[LinkDemo2]" class="btn small btn-outline" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section fade-up">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="grid cert-grid">
+          <div class="card cert">
+            <img src="assets/LogoCert1.png" alt="Sertifikat 1" />
+            <h4>[Nama Kursus]</h4>
+            <p class="muted small">[Penyelenggara] — [Tahun]</p>
+          </div>
+          <div class="card cert">
+            <img src="assets/LogoCert2.png" alt="Sertifikat 2" />
+            <h4>[Nama Kursus]</h4>
+            <p class="muted small">[Penyelenggara] — [Tahun]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-up">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <!-- each .skill has data-percent for progress animation -->
+          <div class="skill">
+            <div class="skill-head"><span>HTML</span><span>90%</span></div>
+            <div class="progress" data-percent="90"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>CSS</span><span>85%</span></div>
+            <div class="progress" data-percent="85"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+            <div class="progress" data-percent="75"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Python</span><span>70%</span></div>
+            <div class="progress" data-percent="70"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>SQL</span><span>65%</span></div>
+            <div class="progress" data-percent="65"><div class="progress-bar"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Canva</span><span>80%</span></div>
+            <div class="progress" data-percent="80"><div class="progress-bar"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Let's work together</h3>
+            <p class="muted">Kirim pesan singkat atau hubungi melalui tautan di bawah.</p>
+            <p class="social">
+              <a href="mailto:[EmailAnda]" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="[LinkGitHub]" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="[LinkLinkedIn]" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="[LinkInstagram]" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+
+          <form id="contact-form" class="contact-form" onsubmit="return false;">
+            <input type="text" name="name" placeholder="Nama Anda" required />
+            <input type="email" name="email" placeholder="Email Anda" required />
+            <textarea name="message" placeholder="Pesan..." rows="6" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+            <p id="form-msg" class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 [Nama Lengkap]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
